@@ -4,6 +4,7 @@ import com.example.Realtimeticketsystem.service.TicketService;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
+import com.example.Realtimeticketsystem.service.ConfigService;
 
 // Define request DTOs for adding and buying tickets
 class TicketRequest {
