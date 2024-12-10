@@ -1,134 +1,59 @@
-# Real-Time Event Ticketing System
+# RealTimeTicketSystemFrontend
 
-## Project Overview
-The **Real-Time Event Ticketing System** is a robust, concurrent application designed to simulate a dynamic ticketing environment using modern web technologies. The system leverages the **Producer-Consumer pattern** to handle ticket releases and purchases concurrently while maintaining data integrity.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
 
----
+## Development server
 
-## Technology Stack
-- **Backend**: Spring Boot
-- **Frontend**: Angular
-- **Database**: H2 (In-memory database)
-- **Concurrency**: Java Multithreading
+To start a local development server, run:
 
----
+```bash
+ng serve
+```
 
-## Features
-- Concurrent ticket releases by vendors.
-- Simultaneous ticket purchases by customers.
-- Real-time ticket availability tracking.
-- Configurable system parameters.
-- Thread-safe operations with synchronization.
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
----
+## Code scaffolding
 
-## Prerequisites
-Ensure the following software is installed on your system:
-- **Java Development Kit (JDK)**: 11 or higher.
-- **Node.js and npm**: Required for Angular.
-- **Angular CLI**: For frontend development.
-- **Maven** or **Gradle**: For building and running the backend.
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
----
+```bash
+ng generate component component-name
+```
 
-## Installation and Setup
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-### Backend (Spring Boot)
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/[YOUR-USERNAME]/real-time-ticketing-system.git
-   cd real-time-ticketing-system
+```bash
+ng generate --help
+```
 
-Backend (Spring Boot)
+## Building
 
-Clone the repository:
-bashCopygit clone https://github.com/[YOUR-USERNAME]/real-time-ticketing-system.git
-cd real-time-ticketing-system
+To build the project run:
 
-Build the Spring Boot application:
-bashCopy# If using Maven
-mvn clean install
+```bash
+ng build
+```
 
-# If using Gradle
-gradle clean build
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-Run the backend:
-bashCopy# Maven
-mvn spring-boot:run
+## Running unit tests
 
-# Gradle
-gradle bootRun
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
+```bash
+ng test
+```
 
-Frontend (Angular)
+## Running end-to-end tests
 
-Navigate to the frontend directory:
-bashCopycd frontend
+For end-to-end (e2e) testing, run:
 
-Install dependencies:
-bashCopynpm install
+```bash
+ng e2e
+```
 
-Start the development server:
-bashCopyng serve
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-Open your browser and navigate to http://localhost:4200
+## Additional Resources
 
-Configuration
-The application allows configuration of the following parameters:
-
-Total Number of Tickets
-Ticket Release Rate
-Customer Retrieval Rate
-Maximum Ticket Capacity
-
-Configure these in the application configuration interface or properties file.
-Key Components
-
-Ticket Vendor (Producer): Simulates ticket vendors releasing tickets
-Customer (Consumer): Simulates customers purchasing tickets
-Ticket Pool: Manages concurrent ticket additions and removals
-Synchronization Mechanisms: Ensures thread-safe operations
-
-Testing
-Run automated tests:
-bashCopy# Maven
-mvn test
-
-# Gradle
-gradle test
-Advanced Features
-
-Priority Customer Handling
-Real-time Analytics Dashboard
-Dynamic Vendor/Customer Management
-
-Architectural Patterns
-
-Producer-Consumer Pattern
-Multithreading
-Synchronization
-
-Challenges and Solutions
-
-Implemented thread-safe ticket pool using synchronized methods
-Used Java concurrency utilities to manage race conditions
-Developed robust error handling and logging mechanisms
-
-Contributing
-
-Fork the repository
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-
-License
-Distributed under the MIT License. See LICENSE for more information.
-Contact
-[Your Name] - [your-email@example.com]
-Project Link: https://github.com/[YOUR-USERNAME]/real-time-ticketing-system
-Acknowledgments
-
-Spring Boot Documentation
-Angular Team
-Java Concurrency Experts
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

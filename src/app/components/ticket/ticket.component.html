@@ -1,0 +1,26 @@
+<div>
+  <h1>Ticket System</h1>
+
+  <div>
+    <h2>Add Tickets</h2>
+    <label>Vendor Name:</label>
+    <input [(ngModel)]="vendorName" placeholder="Enter vendor name" />
+    <label>Ticket Count:</label>
+    <input [(ngModel)]="ticketCount" type="number" placeholder="Enter ticket count" />
+    <button (click)="addTicket()">Add Ticket</button>
+  </div>
+
+  <div>
+    <h2>Buy Ticket</h2>
+    <label>Customer Name:</label>
+    <input [(ngModel)]="customerName" placeholder="Enter customer name" />
+    <button (click)="buyTicket()">Buy Ticket</button>
+  </div>
+
+  <div>
+    <h2>Ticket Updates</h2>
+    <ul>
+      <li *ngFor="let update of ticketUpdates">{{ update }}</li>
+    </ul>
+  </div>
+</div>
